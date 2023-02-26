@@ -1,0 +1,9 @@
+.wrapper {
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 200px;
+}
+.wrapper span {
+  font-size: 15px;
+  font-weight: 700;
+}

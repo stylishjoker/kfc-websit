@@ -1,0 +1,35 @@
+.wrapper ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper ul li {
+  margin: 10px;
+  position: relative;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.wrapper ul li:hover > .line {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.select {
+  transform: scaleX(1);
+}
