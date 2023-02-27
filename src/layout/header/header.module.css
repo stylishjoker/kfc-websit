@@ -1,3 +1,14 @@
 .wrapper {
+  height: 110px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.content {
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: red; */
+  justify-content: space-between;
 }

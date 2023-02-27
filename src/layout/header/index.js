@@ -4,10 +4,12 @@ import NavOption from "../../components/navOption";
 
 const Header = () => {
   return (
-    <div className={classes.wrapper}>
-      <MainNavigates />
-      <NavOption />
-    </div>
+    <header className={classes.wrapper}>
+      <div className={classes.content}>
+        <MainNavigates />
+        <NavOption callback={() => console.log("hehe")} />
+      </div>
+    </header>
   );
 };
 export default Header;
