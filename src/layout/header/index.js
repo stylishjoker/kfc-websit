@@ -6,14 +6,14 @@ import NavOption from "../../components/navOption";
 import NavMenu from "../../components/navMenu";
 
 const Header = () => {
-  const [show,setShow] = useState(true)
-
+  const [show, setShow] = useState(false);
+  console.log(show);
   return (
     <header className={classes.wrapper}>
       <div className={classes.content}>
         <MainNavigates />
-        <NavOption callback={() => console.log("show")} />
-        <NavMenu callback = {()=>console.log("close")}/>
+        <NavOption callback={() => setShow(!show)} />
+        <NavMenu show={show} callback={() => setShow(!show)} />
       </div>
     </header>
   );

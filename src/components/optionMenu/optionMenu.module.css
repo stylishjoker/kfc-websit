@@ -1,0 +1,28 @@
+.listItems li {
+  margin-top: 7px;
+  display: flex;
+}
+.wrapper {
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+.listItems li:last-child {
+  margin-bottom: 15px;
+}
+.listItems li a {
+  position: relative;
+}
+.listItems li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.listItems li a:hover::after {
+  display: block;
+}

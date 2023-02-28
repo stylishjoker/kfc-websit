@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: #202124;
+  /* position: fixed; */
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.icon li {
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 15px;
+  border: 1px solid #ccc;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+.icon li a {
+  display: flex;
+}
+.wrapper span {
+  margin: 20px;
+  color: white;
+  font-size: 12px;
+}
+.lineRed {
+  bottom: 0;
+  right: 50%;
+  width: 12px;
+  height: 10px;
+  box-shadow: inset 0 0 0 32px white, -22px 0 white, 22px 0 white;
+}
