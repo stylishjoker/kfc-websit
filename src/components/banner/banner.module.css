@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #202124;
+  padding: 10px;
+}
+.wrapper span {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+}
+.icon {
+  background: url(https://kfcvn-static.cognizantorderserv.com/images/web/sprite.png?v=5.0)
+    no-repeat;
+}
+.delivery {
+  background-position: -143px -771px;
+  width: 27px;
+  height: 23px;
+}
+.bakery {
+  background-position: -190px -771px;
+  width: 27px;
+  height: 25px;
+}
