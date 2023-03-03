@@ -1,0 +1,17 @@
+.wrapper h2 span {
+  position: relative;
+  font-size: 28px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.wrapper h2 span::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
