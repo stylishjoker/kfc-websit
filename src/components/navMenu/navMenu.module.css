@@ -46,10 +46,10 @@
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: red;
   border-radius: 3px;
 }
 
 .wrapper::-webkit-scrollbar-thumb:hover {
-  background: #ccc;
+  background: red;
 }

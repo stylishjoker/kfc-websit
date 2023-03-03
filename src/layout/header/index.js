@@ -7,7 +7,6 @@ import NavMenu from "../../components/navMenu";
 
 const Header = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
   return (
     <header className={classes.wrapper}>
       <div className={classes.content}>

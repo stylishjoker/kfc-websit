@@ -1,7 +1,10 @@
 .wrapper {
   height: 110px;
   border-bottom: 1px solid #ccc;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: white;
 }
 .content {
   display: flex;
