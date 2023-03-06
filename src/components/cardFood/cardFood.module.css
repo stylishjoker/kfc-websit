@@ -1,0 +1,35 @@
+.wrapper a {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+  border-radius: 0.35714286rem;
+  overflow: hidden;
+}
+.wrapper a img {
+  min-height: 272px;
+  background-size: cover;
+}
+.wrapper {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 24.8%;
+  padding: 6px 12px;
+}
+.wrapper img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  width: 100%;
+}
+.wrapper:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.wrapper span {
+  padding: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 5px;
+  font-size: 18px;
+}

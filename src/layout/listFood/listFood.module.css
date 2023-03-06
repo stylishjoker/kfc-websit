@@ -15,3 +15,16 @@
   top: 50%;
   z-index: -1;
 }
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wrapper {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.7142857143rem;
+  margin-left: -0.7142857143rem;
+  margin-top: 10px;
+}

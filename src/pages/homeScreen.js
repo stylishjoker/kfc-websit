@@ -10,17 +10,27 @@ import { getData } from "../firebase";
 const HomeScreen = () => {
   const [danhMucMonAn, setDanhMucMonAn] = useState([]);
   useEffect(() => {
-    const data = getData("DanhMucMonAn");
-    console.log(data);
-    setDanhMucMonAn();
+    async function fetchData() {
+      const data = await getData("DanhMucMonAn");
+      setDanhMucMonAn(data);
+    }
+    fetchData();
   }, []);
-  console.log(danhMucMonAn);
   return (
     <>
       <ScreenLayout>
         <Sliders />
         <div className={classes.content}>
-          <ListFood />
+          <h2>
+            <span>danh mục món ăn</span>
+          </h2>
+          <ListFood data={danhMucMonAn} />
+          <h2>
+            <div className={classes.center}>
+              <div className={classes.icon}></div>
+              <span>có thể bạn sẽ thích món này</span>
+            </div>
+          </h2>
         </div>
       </ScreenLayout>
     </>

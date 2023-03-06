@@ -10,7 +10,6 @@ export const getData = async (name) => {
       id: doc.id,
     }));
     newData = data;
-    // console.log("newData", newData);
   });
   return newData;
 };

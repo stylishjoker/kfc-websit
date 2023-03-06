@@ -43,3 +43,9 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
+img {
+  vertical-align: middle;
+}
+h2 {
+  line-height: 34px;
+}

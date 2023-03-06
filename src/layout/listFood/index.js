@@ -1,11 +1,14 @@
+import CardFood from "../../components/cardFood/inde";
 import classes from "./listFood.module.css";
 
-const ListFood = () => {
+const ListFood = (props) => {
   return (
     <div className={classes.wrapper}>
-      <h2>
-        <span>Danh mục món ăn</span>
-      </h2>
+      <div className={classes.content}>
+        {props.data.map((item) => {
+          return <CardFood key={item.id} data={item} />;
+        })}
+      </div>
     </div>
   );
 };

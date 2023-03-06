@@ -5,4 +5,37 @@
 .content {
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 20px;
+}
+.content h2 span {
+  text-transform: uppercase;
+  padding: 5px;
+  background: white;
+  position: relative;
+}
+.content h2 {
+  position: relative;
+  letter-spacing: 2px;
+  background-color: white;
+  margin-top: 30px;
+}
+.content h2::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  height: 2px;
+  width: 100%;
+  top: calc(50% - 2px);
+}
+.icon {
+  width: 41px;
+  height: 77px;
+  background: url("https://kfcvn-static.cognizantorderserv.com/images/web/sprite.png?v=5.0")
+    no-repeat;
+  background-position: -10px -805px;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
