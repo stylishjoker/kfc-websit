@@ -1,14 +1,16 @@
-import { collection, getDocs, addDoc, deleteDoc } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 
 import { db } from "./firebase";
 
 export const getData = async (name) => {
   let newData;
   await getDocs(collection(db, name)).then((querySnapshot) => {
-    newData = querySnapshot.docs.map((doc) => ({
+    const data = querySnapshot.docs.map((doc) => ({
       ...doc.data(),
       id: doc.id,
     }));
+    newData = data;
+    // console.log("newData", newData);
   });
   return newData;
 };

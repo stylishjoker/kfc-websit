@@ -35,7 +35,7 @@ const Sliders = () => {
     <>
       <Slider {...settings}>
         {imgs.map((item) => {
-          return <img src={item.link} alt="KFC" />;
+          return <img key={item.link} src={item.link} alt="KFC" />;
         })}
       </Slider>
     </>
